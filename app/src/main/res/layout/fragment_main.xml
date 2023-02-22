@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Starting time"
+            android:gravity="center"
+            android:textSize="24sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/startTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Time1"
+            android:textSize="24sp"
+            android:layout_weight="7"
+            />
+
+        <Button
+            android:id="@+id/setStartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Set"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Finishing time"
+            android:gravity="center"
+            android:textSize="24sp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stopTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Time2"
+            android:textSize="24sp"
+            android:layout_weight="7"
+            />
+
+        <Button
+            android:id="@+id/setStopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Set"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Intervals"
+            android:gravity="center"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Interval minutes:"
+                android:textSize="24sp"
+                android:layout_weight="2"
+                />
+
+            <EditText
+                android:id="@+id/etInterval"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textSize="20sp"
+                android:hint="Minutes"
+                android:layout_weight="1.8"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Time for smoking: "
+                android:textSize="24sp"
+                android:layout_weight="2"
+                />
+
+            <EditText
+                android:id="@+id/etTimeFS"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textSize="20sp"
+                android:hint="Minutes"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:text="Start"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
